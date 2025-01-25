@@ -10,6 +10,6 @@ var htmlSerializer= new HtmlSerializer();
 var html = await htmlSerializer.Load("https://hebrewbooks.org/beis");
 var dom=htmlSerializer.Serialize(html);
 
-var result = dom.Query(Selector.Parse("div div"));
+var result = dom.Query(Selector.Parse("div.popup div#popupForm.formPopup a"));
 foreach (var item in result)
     Console.WriteLine(item);

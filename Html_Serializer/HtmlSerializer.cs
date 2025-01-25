@@ -77,7 +77,7 @@ namespace Html_Serializer
                 }
             }
 
-            return restoredTags.ToList();
+            return restoredTags;
         }
 
 
